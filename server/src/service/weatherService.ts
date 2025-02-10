@@ -14,14 +14,16 @@ class Weather{
   windSpeed: number;
   humidity: number;
   icon: string;
+  description: string;
   city: string;
 
-  constructor(date: string, tempF:number, windSpeed: number, humidity: number, icon: string, city: string = ''){
+  constructor(date: string, tempF:number, windSpeed: number, humidity: number, icon: string, description: string, city: string = ''){
     this.date = date;
     this.tempF = tempF;
     this.windSpeed = windSpeed;
     this.humidity = humidity;
     this.icon = icon
+    this.description = description;
     this.city = city;
   }
 }
@@ -114,7 +116,7 @@ class WeatherService {
     const { weather, main, wind, dt, name } = currentWeather;
     const date = new Date (dt * 1000);
     const formattedDate:string = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
-    currentWeather = new Weather(formattedDate, main.temp, wind.speed, main.humidity, weather[0].icon, name)
+    currentWeather = new Weather(formattedDate, main.temp, wind.speed, main.humidity, weather[0].icon, weather[0].description, name)
     return currentWeather;
   }
   
@@ -150,7 +152,7 @@ class WeatherService {
     dailyWeather.forEach((forecast: any) => {
       const date = new Date(forecast.dt * 1000);
       const formattedDate:string = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
-      const weather = new Weather(formattedDate, forecast.main.temp, forecast.wind.speed, forecast.main.humidity, forecast.weather[0].icon)
+      const weather = new Weather(formattedDate, forecast.main.temp, forecast.wind.speed, forecast.main.humidity, forecast.weather[0].icon, forecast.weather[0].description)
       forecastArray.push(weather)
     })
 
@@ -163,7 +165,6 @@ class WeatherService {
       const location: any =  await this.fetchAndDestructureLocationData(city);
       const coordinates: Coordinates = {lon: location.lon, lat: location.lat};
       const weatherForcast = await this.fetchWeatherData(this.buildWeatherQuery(coordinates));
-      console.log(weatherForcast);
       return weatherForcast;
       
     } catch(err) {
