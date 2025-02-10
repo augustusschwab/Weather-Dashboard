@@ -12,11 +12,11 @@ An application that allows a user to view the current and 5 day weather forecast
   
 
 ## Usage
-This application is running live at the link below. Simply follow the link and begin searching the weather for a particular city.
+This application is running live at the link below. Simply follow the link and begin searching the weather for a particular city. Alternatively a screenshot of the application can be viewed at the second link titled "App Screenshot".
 
   [Deployed Application](https://five-day-weather-forecast-lg9r.onrender.com/)
 
-  ![App Screenshot](https://drive.google.com/file/d/1BInudvgIlH0VzHoDlKF7pwOlrzPyTIaK/view?usp=sharing)
+  [App Screenshot](https://drive.google.com/file/d/1BInudvgIlH0VzHoDlKF7pwOlrzPyTIaK/view?usp=sharing)
 
 
 ## License
