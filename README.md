@@ -16,7 +16,7 @@ This application is running live at the link below. Simply follow the link and b
 
   [Deployed Application](https://five-day-weather-forecast-lg9r.onrender.com/)
 
-  ![Image]([https://drive.google.com/file/d/1BInudvgIlH0VzHoDlKF7pwOlrzPyTIaK/view?usp=sharing])
+  ![App Screenshot](https://drive.google.com/file/d/1BInudvgIlH0VzHoDlKF7pwOlrzPyTIaK/view?usp=sharing)
 
 
 ## License
