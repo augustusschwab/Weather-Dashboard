@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Salt Lake City",
+		"id": "defa42f5-8956-4811-84c4-5aa0b4baa528"
+	},
+	{
+		"name": "Portland",
+		"id": "60a24df3-429c-4851-a597-409242c34a60"
+	},
+	{
+		"name": "Seattle",
+		"id": "5dd320a8-3b7f-40f9-b80e-04e486bb9ad6"
+	},
+	{
+		"name": "Houston",
+		"id": "1699f848-84b6-46d8-9cc3-3f27cc534f13"
+	},
+	{
+		"name": "London",
+		"id": "9c73f765-69ab-4449-b157-5b99c2339304"
+	},
+	{
+		"name": "Vancouver",
+		"id": "2ec5135d-69d0-43fc-a173-1c6a297d3d18"
+	},
+	{
+		"name": "New Orleans",
+		"id": "3108a57f-a5e5-4453-8b23-4b7da6b9bf89"
+	}
+]
